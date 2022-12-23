@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import math
 import csv
-%matplotlib inline
+#%matplotlib inline
 
 
 #tmp = np.array([[1,4],[4,6],[5,4],[5,7],[1,7]])
