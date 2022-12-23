@@ -1,14 +1,17 @@
-#importing required libraries
-import streamlit as st
-import matplotlib.pyplot as plt
 import numpy as np
+import streamlit as st
+import matplotlib.pylab as plt
 
-#creating a sample array
-a = np.random.normal(1, 1, size=50)
+st.title("Simulation[tm]")
+st.write("Here is our super important simulation")
 
-#specifying the figure to plot 
-fig, x = plt.subplots()
-x.hist(a, bins=10)
+x = st.slider('Slope', min_value=0.01, max_value=0.10, step=0.01)
+y = st.slider('Noise', min_value=0.01, max_value=0.10, step=0.01)
 
-#plotting the figure
-st.pyplot(fig)
+st.write(f"x={x} y={y}")
+values = np.cumprod(1 + np.random.normal(x, y, (100, 10)), axis=0)
+
+for i in range(values.shape[1]):
+    plt.plot(values[:, i])
+
+st.pyplot()
