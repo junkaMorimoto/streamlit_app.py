@@ -1,3 +1,4 @@
+import streamlit as st
 from pyparsing.helpers import string_end
 from IPython.utils.tempdir import TemporaryDirectory
 from matplotlib.projections import ProjectionRegistry
