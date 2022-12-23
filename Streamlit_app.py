@@ -2,9 +2,9 @@
 #from IPython.utils.tempdir import TemporaryDirectory
 #from matplotlib.projections import ProjectionRegistry
 #from sympy.geometry import *
-import matplotlib.pyplot as plt
-import numpy as np
-import csv
+#import matplotlib.pyplot as plt
+#import numpy as np
+#import csv
 #%matplotlib inline
 
 # ポリゴン（多角形）の生成
