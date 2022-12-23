@@ -3,7 +3,7 @@
 #from matplotlib.projections import ProjectionRegistry
 #from sympy.geometry import *
 #import matplotlib.pyplot as plt
-#import numpy as np
+import numpy as np
 #import csv
 #%matplotlib inline
 
